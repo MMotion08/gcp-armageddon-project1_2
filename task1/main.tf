@@ -67,6 +67,6 @@ resource "google_storage_object_acl" "image_acl" {
 }
 
 output "website_url" {
-  value = "https://storage.googleapis.com/${google_storage_bucket.mmotion-notion.name}/mmotion-index.html"
+  value = "https://storage.googleapis.com/mmotion-notion/mmotion-index.html"
   description = "public access URL in GCP storage bucket details"
 }
