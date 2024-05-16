@@ -255,7 +255,7 @@ resource "google_compute_address" "static-ip-asia-to-europe" {
 resource "google_compute_vpn_tunnel" "tunnel-to-europe" {
     name = "tunnel-to-europe"
     peer_ip = google_compute_address.static-ip-europe-to-asia.address
-    shared_secret = "glory-to-gallerhorn"
+    shared_secret = "operation-meteor"
     target_vpn_gateway = google_compute_vpn_gateway.vpn-gateway-asia-to-europe.id
 
     local_traffic_selector = [google_compute_subnetwork.gundam-wing0195-subnet.ip_cidr_range]
@@ -319,7 +319,7 @@ resource "google_compute_address" "static-ip-europe-to-asia" {
 resource "google_compute_vpn_tunnel" "tunnel-to-asia" {
     name = "tunnel-to-asia"
     peer_ip = google_compute_address.static-ip-asia-to-europe.address
-    shared_secret = "glory-to-gallerhorn"
+    shared_secret = "operation-meteor"
     target_vpn_gateway = google_compute_vpn_gateway.vpn-gateway-europe-to-asia.id
     
     local_traffic_selector = [google_compute_subnetwork.zeta-gundam0087-subnet.ip_cidr_range]
