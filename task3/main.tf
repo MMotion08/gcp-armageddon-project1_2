@@ -10,8 +10,8 @@ terraform {
 provider "google" {
   # Configuration options
 project = "gcp-class5-5-420319"
-/*region = "europe-north1"
-zone = "europe-north1-a"*/
+region = "europe-north1"
+zone = "europe-north1-a"
 credentials = "gcp-class5-5-420319-bfb49f97b594.json"
 }
 
