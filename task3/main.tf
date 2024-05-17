@@ -50,7 +50,7 @@ resource "google_compute_instance" "zeta-gundam0087-vm" {
   tags         = ["http-server", "https-server"]
 
    metadata = {
-    startup-script = "    #!/bin/bash\n    apt-get update\n    apt-get install -y apache2\n    cat <<EOT > /var/www/html/index.html\n    <html>\n      <head>\n        <title>Welcome to My Armageddon Webpage</title>\n      </head>\n      <body>\n        <h1>Welcome to My Armageddon Homepage!</h1>\n        <p>I need coffee. Is it over, yet?</p>\n      </body>\n    </html>"
+    startup-script = "    #!/bin/bash\n    apt-get update\n    apt-get install -y apache2\n    cat <<EOT > /var/www/html/index.html\n    <html>\n      <head>\n        <title>Welcome to My Armageddon Webpage</title>\n      </head>\n      <body>\n        <h1>Welcome to My Armageddon Homepage!</h1>\n        <p>This is the Europe HQ office website.</p>\n      </body>\n    </html>"
   }
 
   boot_disk {
@@ -112,7 +112,7 @@ resource "google_compute_instance" "gundam-zz0088-vm" {
   zone         = "us-west1-a"
 
    metadata = {
-    startup-script = "    #!/bin/bash\n    apt-get update\n    apt-get install -y apache2\n    cat <<EOT > /var/www/html/index.html\n    <html>\n      <head>\n        <title>Welcome to My Homepage</title>\n      </head>\n      <body>\n        <h1>Welcome to My Homepage!</h1>\n        <p>This page is served by Apache on a Google Compute Engine VM instance.</p>\n      </body>\n    </html>"
+    startup-script = "    #!/bin/bash\n    apt-get update\n    apt-get install -y apache2\n    cat <<EOT > /var/www/html/index.html\n    <html>\n      <head>\n        <title>Welcome to My Homepage</title>\n      </head>\n      <body>\n        <h1>Welcome to My Homepage!</h1>\n        <p>Checking in from the western US office.</p>\n      </body>\n    </html>"
   }
 
   boot_disk {
@@ -144,7 +144,7 @@ resource "google_compute_instance" "victory-gundam0153-vm" {
   zone         = "southamerica-east1-a"
   
     metadata = {
-    startup-script = "    #!/bin/bash\n    apt-get update\n    apt-get install -y apache2\n    cat <<EOT > /var/www/html/index.html\n    <html>\n      <head>\n        <title>Welcome to My Armageddon Webpage</title>\n      </head>\n      <body>\n        <h1>Welcome to My Armageddon Homepage!</h1>\n        <p>I need coffee. Is it over, yet?</p>\n      </body>\n    </html>"
+    startup-script = "    #!/bin/bash\n    apt-get update\n    apt-get install -y apache2\n    cat <<EOT > /var/www/html/index.html\n    <html>\n      <head>\n        <title>Welcome to My Armageddon Webpage</title>\n      </head>\n      <body>\n        <h1>Welcome to My Armageddon Homepage!</h1>\n        <p>Checking in from the South American office.</p>\n      </body>\n    </html>"
   }
 
   boot_disk {
@@ -202,7 +202,7 @@ resource "google_compute_instance" "gundam-wing0195-vm" {
   zone         = "asia-east1-a"
   
 metadata = {
-    startup-script = "    #!/bin/bash\n    apt-get update\n    apt-get install -y apache2\n    cat <<EOT > /var/www/html/index.html\n    <html>\n      <head>\n        <title>Welcome to My Armageddon Webpage</title>\n      </head>\n      <body>\n        <h1>Welcome to My Armageddon Homepage!</h1>\n        <p>I need coffee. Is it over, yet?</p>\n      </body>\n    </html>"
+    startup-script = "    #!/bin/bash\n    apt-get update\n    apt-get install -y apache2\n    cat <<EOT > /var/www/html/index.html\n    <html>\n      <head>\n        <title>Welcome to My Armageddon Webpage</title>\n      </head>\n      <body>\n        <h1>Welcome to My Armageddon Homepage!</h1>\n        <p>Checking in from the East Asia office</p>\n      </body>\n    </html>"
   }
 
   boot_disk {
